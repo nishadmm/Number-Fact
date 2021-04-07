@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <title>Number Facts</title>
+  <style>
+    #fact-page,
+    #result-card {
+      display: none;
+    }
+
+    #back-btn {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="row" id="initial-page">
+      <!-- initial page -->
+      <div class="card col-10 mt-5 bg-primary text-white px-4 pt-4 mx-auto">
+        <h1 class="display-6 text-center">Fact <i class="fab fa-artstation"></i></h1>
+        <p class="mt-2 lead text-center">Select Your Choice...</p>
+        <div class="btn-group mx-auto">
+          <a href="" class="btn btn-danger  text-white me-5" id="number-btn">Number Facts <i
+              class="fas fa-spinner"></i></a>
+          <a href="" class="btn btn-danger text-white" id="year-btn">Date Facts <i class="fas fa-compass"></i></a>
+        </div>
+        <p class="text-center mt-5">Powered By Nishad &copysr;</p>
+      </div>
+    </div>
+    <div class="row">
+      <!--  Fact page -->
+      <div class="card col-10 mt-5 bg-primary text-white px-4 pt-4 mx-auto" id="fact-page">
+        <h1 class="display-6 text-center" id="fact-page-heading"><i class="fab fa-artstation"></i></h1>
+        <p class="mt-4" id="fact-page-lead"></p>
+        <div id="date-input"></div>
+        <input type="number" class="form-control mb-4" placeholder="Enter Any Number" id="fact-input">
+        <div class="card bg-primary" id="result-card">
+          <div class="card-title">Number Fact</div>
+          <p class="lead" id="factText"></p>
+        </div>
+        <i class="fas fa-arrow-circle-left fa-2x mb-2" id="back-btn"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
